@@ -6,12 +6,18 @@
     */
 
     //ENTRADA
-    let intervalo = Number(prompt('Informe uma nota entre 0 e 10'));
+    let intervaloValido = Number(prompt('Informe uma nota entre 0 e 10'));
 
     //PROCESSAMENTO
-    while(intervalo < 0 || intervalo > 10 ) {
-        intervalo = Number(prompt('Informe uma nota entre 0 e 10'));
+    while(intervaloValido < 0 || intervaloValido > 10 ) {
+        alert(`insira um número válido`)
+        intervaloValido = Number(prompt('Informe uma nota entre 0 e 10'));
+        
     }
+
+    //SAÍDA
+     alert(`${intervaloValido} atende a condição! :)`)
+
 
     /*
     RESUMO:

@@ -6,11 +6,21 @@
     */
 
     //ENTRADA
-
+    let usuario = prompt(`Informe o nome de usuário:`);
+    let credencial = prompt(`Crie uma senha:`);
 
     //PROCESSAMENTO
-
-
+    while (credencial == userName) {
+        alert(`Senha Inválida, tente novamente!`);
+        credencial = prompt(`Informe uma senha válida:`);
+    }
     //SAÍDA
+    alert(`Usúario ${usuario} criado com sucesso`);
+
+    /*
+    RESUMO:
+    O código utiliza o while para obter uma cadastro válido do usuário. Enquanto isso não acontece, a estrutura de repetição continua funcionando, repetindo o prompt presente na variável credencial.
+    */
+
 
 </script>
