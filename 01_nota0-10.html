@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA: NOTA ENTRE 0 E 10
+    Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
+    */
+
+    //ENTRADA
+    let intervalo = Number(prompt('Informe uma nota entre 0 e 10'));
+
+    //PROCESSAMENTO
+    while(intervalo < 0 || intervalo > 10 ) {
+        intervalo = Number(prompt('Informe uma nota entre 0 e 10'));
+    }
+
+    /*
+    RESUMO:
+    O código utiliza o while para obter uma resposta válida do usuário. Enquanto isso não acontece, a estrutura de repetição continua funcionando, repetindo o prompt presente na variável intervalo.
+    */
+
+</script>
