@@ -6,10 +6,21 @@
     */
 
     //ENTRADA
-
+    let credencial = Number(prompt(`crie uma senha`));
 
     //PROCESSAMENTO
+    while (credencial.lenght !== 4 || isNaN(credencial) || 
+        !Number.isInteger(Number(credencial))) {
+            alert(`crie uma senha válida`);
+            credencial = Number(prompt(`crie uma senha`));
+        }
 
+    let acesso = Number(prompt(`digite sua senha`));
+    while (acesso !== credencial) {
+        alert(`senha incorreta, tente novamente`);
+        acesso = Number(prompt(`digite sua senha novamente`));
+    }
+    
 
     //SAÍDA
 

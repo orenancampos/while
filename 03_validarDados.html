@@ -10,11 +10,37 @@
     Estado Civil: 's', 'c', 'v', 'd';
     */
 
-    //ENTRADA
+    //ENTRADA, PROCESSAMENETO E SAÍDA WHILE
+    let nome = prompt(`informe seu nome`);
+    while (nome.length < 3) {
+    alert(`Inválido, tente novamente!`);
+    nome = prompt(`Informe um nome válido`);
+    }
+
+    let salario = Number(prompt(`informe seu salário`));
+    while (salario < 0) {
+    alert(`Inválido, tente novamente!`);
+    salario = prompt(`Informe um salário válido`);
+    }
+
+    let idade = Number(prompt(`informe sua idade`));
+    while (idade < 0 && idade > 150) {
+    alert(`Inválido, você precisa estar vivo para efetuar o cadastro!`);
+    idade = prompt(`Informe uma idade válida`);
+    }
+
+    let sexo = prompt(`Insira seu sexo ('f' ou 'm'):`).toLowerCase();
+    while (sexo !== `f` || sexo !== `m`) {
+        alert(`Inválido, tente novamente!`);
+        sexo = prompt(`Insira um sexo válido ('f' ou 'm'):`).toLowerCase();
+    };
+
+    let estadoCivil = prompt(`Informe seu estado cívil ('s', 'c', 'v', 'd')`).toLowerCase();
+    while (estadoCivil !== "s" || estadoCivil !== "c" || estadoCivil !=+ "v" || estadoCivil !== "d"){
+        alert(`Inválido, tente novamente!`);
+        estadoCivil = prompt(`Insira seu estado civil ('s', 'c', 'v', 'd'):`).toLowerCase();
+    };
 
 
-    //PROCESSAMENTO
 
-
-    //SAÍDA
 </script>
