@@ -5,11 +5,22 @@
     */
 
     //ENTRADA
+    let quantidade = Number(prompt("Quantos números da sequência de Fibonacci você quer ver?"));
 
+    let primeiro = 0;
+    let segundo = 1;
+    let contador = 0;
 
     //PROCESSAMENTO
+    while (contador < quantidade) {
+        document.write(primeiro + "<br>");
 
+        let proximo = primeiro + segundo;
+        primeiro = segundo;
+        segundo = proximo;
+
+        contador++;
+    }
 
     //SAÍDA
-    
 </script>

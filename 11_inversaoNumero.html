@@ -1,4 +1,5 @@
 <script>
+
     //Problema: Inversão de Número
     /*
     Escreva um programa que peça ao usuário um número e inverta sua ordem usando uma estrutura de repetição while.
@@ -8,10 +9,15 @@
     */
 
     //ENTRADA
-
+    let numeroUsuario = prompt("Me dê um número:");
+    let numeroInvertido = "";
 
     //PROCESSAMENTO
+    while (numeroInvertido === "") {
+        numeroInvertido = numeroUsuario.split("") .reverse().join("");
+    }
 
+    alert(numeroInvertido);
 
     //SAÍDA
 
